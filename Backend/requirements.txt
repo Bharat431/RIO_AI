@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+langchain-groq
+langgraph
+PyMuPDF
+scikit-learn
+SpeechRecognition
+pydub
+python-dotenv
+python-multipart
+sqlalchemy
+httpx

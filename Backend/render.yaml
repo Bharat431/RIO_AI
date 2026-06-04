@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: rio-backend
+    runtime: python
+    plan: free
+    region: oregon
+    buildCommand: |-
+      pip install -r backend/requirements.txt
+      pip install -e .
+    startCommand: uvicorn backend.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: GROQ_API_KEY
+        sync: false
+      - key: ALLOWED_ORIGINS
+        value: "https://rio-ai.netlify.app"
+      - key: PYTHONPATH
+        value: /opt/render/project/src
+    healthCheckPath: /health
