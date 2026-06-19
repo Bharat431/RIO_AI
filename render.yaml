@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: rio-backend
+    runtime: python
+    rootDir: interview-agent
+    plan: free
+    region: oregon
+    buildCommand: pip install -r backend/requirements.txt
+    startCommand: uvicorn wsgi:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: GROQ_API_KEY
+        sync: false
+      - key: ALLOWED_ORIGINS
+        value: "https://rio-ai.netlify.app"
+    healthCheckPath: /health

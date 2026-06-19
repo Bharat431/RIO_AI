@@ -1,0 +1,12 @@
+INFO:     127.0.0.1:53671 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53671 - "GET /style.css?v=6 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53671 - "GET /app.js?v=5 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53671 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53671 - "GET / HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:53671 - "GET / HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:56527 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56527 - "GET /style.css?v=6 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56527 - "GET /app.js?v=5 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56527 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:54718 - "POST /ask HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64988 - "GET / HTTP/1.1" 304 Not Modified
